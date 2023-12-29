@@ -30,8 +30,24 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- move.nvim
+    ["<A-j>"] = { ":MoveLine(1)<CR>" },
+    ["<A-k>"] = { ":MoveLine(-1)<CR>" },
+    ["<A-h>"] = { ":MoveHChar(-1)<CR>" },
+    ["<A-l>"] = { ":MoveHChar(1)<CR>" },
+    ["<leader>wf"] = { ":MoveWord(1)<CR>" },
+    ["<leader>wb"] = { ":MoveWord(-1)<CR>" },
+  },
+  v = {
+    -- move.nvim
+    ["<A-j>"] = { ":MoveBlock(1)<CR>" },
+    ["<A-k>"] = { ":MoveBlock(-1)<CR>" },
+    ["<A-h>"] = { ":MoveHBlock(-1)<CR>" },
+    ["<A-l>"] = { ":MoveHBlock(1)<CR>" },
   },
   t = {
     -- setting a mapping to false will disable it
