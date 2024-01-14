@@ -11,6 +11,8 @@ return {
 
   { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" },
 
+  { import = "astrocommunity/completion/copilot-lua-cmp" },
+
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
