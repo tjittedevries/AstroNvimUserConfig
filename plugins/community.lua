@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.go" },
 
   { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" },
 
